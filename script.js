@@ -31,11 +31,26 @@ function dice(numSides){
     // * put the p tag on the html page
     pageBody.appendChild(family)
 }
-dice(20);
+/**dice(20);
 dice(12);
 dice(10);
 dice(6);
-dice(4);
+dice(4);*/
+
+function describeToenails(){
+    // * get the page body
+    let pageBody = document.querySelector("body");
+    // * write html to the page body
+    pageBody.innerHTML="<h1>I like toenails</h1><p>They have fungus</p>";
+    // * an array of toenail lengths
+    toeNailLengths = ["12","4","9","7"]
+    let myList = document.createElement("ul");
+    pageBody.append(myList);
+    /*toeNailLengths.forEach(function(){
+
+    })*/
+}
+describeToenails();
 
 let halflingVeteran = {
     name: "Grayson",
